@@ -1,0 +1,7 @@
+.vscode/
+venv/
+secrets/*
+upload/*
+token*
+*__pycache__/
+resources/clients.json
