@@ -7,3 +7,5 @@ clients_file = os.path.join(os.getcwd(), 'resources', 'clients.json')
 with open(clients_file) as f:
     CLIENTS = CaseInsensitiveDict(json.load(f))
 # CLIENTS = CaseInsensitiveDict(CLIENTS)
+user_name = "Jesse Williams"
+user_email = "jesse@negativespacesounds.com"

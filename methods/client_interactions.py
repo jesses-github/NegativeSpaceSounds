@@ -1,4 +1,5 @@
 from utils.google_service import *
+from utils.settings import *
 from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -55,6 +56,7 @@ class Gmail_Service():
         mime_message = MIMEMultipart()
         mime_message["to"] = recipients
         mime_message["subject"] = subject
+        mime_message["from"] = f"{user_name} <{user_email}>"
         mime_message.attach(MIMEText(body, "plain"))
         if attachments:
             for attachment in attachments:
